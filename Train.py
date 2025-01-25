@@ -10,17 +10,10 @@ import torch.optim as optim
 from torch.optim.lr_scheduler import StepLR
 import numpy as np
 import matplotlib.pyplot as plt
-from yolo_model import Neck_Head
-from ViT_model import VisionTransformer
-from models.t2t_vit import T2T_ViT
-from models.t2t_vit_se import T2T_ViT_SE
-from Residual_model import Residual, RESnet
+from VTNSL_model import VisionTransformer
 import torch.nn as nn
 import pandas as pd
 from torch.utils.data import Dataset, DataLoader, Sampler
-from revit.model.revit_model import ReViT
-from DNN import DNN
-
 
 class MyDataset(Dataset):
     def __init__(self, X, y):
